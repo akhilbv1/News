@@ -14,8 +14,6 @@ import javax.inject.Inject
 
 class Repository @Inject constructor (val newsApi: NewsApi) {
 
-
-
     fun getNewsList(): Single<Response<List<NewsObject>>> {
         return newsApi.getNewsList()
     }

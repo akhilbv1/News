@@ -40,7 +40,10 @@ class NewsListViewModel @Inject constructor(val repository: Repository) : ViewMo
             })
     }
 
-    fun getCompositeDisposable():CompositeDisposable = compositeDisposable
+    override fun onCleared() {
+        super.onCleared()
+        compositeDisposable.dispose()
+    }
 
     fun getSuccessLiveData(): MutableLiveData<List<NewsObject>> = onGetNewsListSuccess
 
