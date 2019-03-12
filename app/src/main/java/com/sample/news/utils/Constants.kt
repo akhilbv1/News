@@ -1,4 +1,4 @@
-package com.sample.news.Utils
+package com.sample.news.utils
 
 class Constants{
 

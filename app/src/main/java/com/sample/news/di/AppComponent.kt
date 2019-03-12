@@ -1,4 +1,4 @@
-package com.sample.news.DI
+package com.sample.news.di
 
 import android.app.Application
 import dagger.BindsInstance
@@ -10,7 +10,7 @@ import com.sample.news.NewsApplication
 import javax.inject.Singleton
 
 @Singleton
-@Component(modules = [(AndroidSupportInjectionModule::class),  (ActivitiesBindingModule::class), (NetworkModule::class)])
+@Component(modules = [(AndroidSupportInjectionModule::class),  (ActivitiesBindingModule::class), (NetworkModule::class), (ViewModelModule::class)])
 interface AppComponent: AndroidInjector<DaggerApplication> {
 
     fun inject(app: NewsApplication)

@@ -1,8 +1,8 @@
-package com.sample.news.DI
+package com.sample.news.di
 
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
-import com.sample.news.UI.NewsList.NewsListActivity
+import com.sample.news.ui.newslist.NewsListActivity
 
 @Module
 abstract class ActivitiesBindingModule{

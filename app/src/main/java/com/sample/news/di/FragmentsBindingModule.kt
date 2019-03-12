@@ -1,3 +1,3 @@
-package com.sample.news.DI
+package com.sample.news.di
 
 class FragmentsBindingModule{}

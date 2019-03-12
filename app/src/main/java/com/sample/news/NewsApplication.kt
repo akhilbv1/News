@@ -2,7 +2,7 @@ package com.sample.news
 
 import dagger.android.AndroidInjector
 import dagger.android.DaggerApplication
-import com.sample.news.DI.DaggerAppComponent
+import com.sample.news.di.DaggerAppComponent
 
 class NewsApplication : DaggerApplication() {
 

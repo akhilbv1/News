@@ -1,4 +1,4 @@
-package com.sample.news.DI
+package com.sample.news.di
 
 import dagger.Module
 import dagger.Provides
@@ -10,8 +10,8 @@ import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
 import com.sample.news.BuildConfig
-import com.sample.news.Service.Repositories.NewsApi
-import com.sample.news.Utils.Constants
+import com.sample.news.service_retrofit.repositories.NewsApi
+import com.sample.news.utils.Constants
 import java.util.concurrent.TimeUnit
 import javax.inject.Singleton
 

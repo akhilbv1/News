@@ -4,12 +4,12 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".UI.NewsList.NewsListActivity">
+        tools:context=".ui.newslist.NewsListActivity">
 
     <android.support.v7.widget.RecyclerView
             android:id="@+id/recNews"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:listitem="@layout/row_item_news_list"/>
+            tools:listitem="@layout/news_list_row_item"/>
 
 </LinearLayout>

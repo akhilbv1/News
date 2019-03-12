@@ -1,9 +1,10 @@
-package com.sample.news.UI.ViewModels
+package com.sample.news.ui.viewmodels
 
 import android.arch.lifecycle.MutableLiveData
 import android.arch.lifecycle.ViewModel
-import com.sample.news.Service.Model.NewsObject
-import com.sample.news.Service.Repositories.Repository
+import com.sample.news.service_retrofit.model.NewsObject
+import com.sample.news.service_retrofit.model.result
+import com.sample.news.service_retrofit.repositories.Repository
 import io.reactivex.SingleObserver
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
@@ -23,9 +24,9 @@ class NewsListViewModel @Inject constructor(val repository: Repository) : ViewMo
 
     fun getNewsList() {
         repository.getNewsList().subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread())
-            .subscribe(object : SingleObserver<Response<List<NewsObject>>> {
-                override fun onSuccess(t: Response<List<NewsObject>>) {
-                    onGetNewsListSuccess.value = t.body()
+            .subscribe(object : SingleObserver<Response<result>> {
+                override fun onSuccess(t: Response<result>) {
+                    onGetNewsListSuccess.value = t.body()?.articles
                 }
 
                 override fun onSubscribe(d: Disposable) {

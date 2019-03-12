@@ -1,4 +1,4 @@
-package com.sample.news.DI
+package com.sample.news.di
 
 import dagger.Module
 

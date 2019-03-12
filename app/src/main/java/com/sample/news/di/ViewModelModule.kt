@@ -1,13 +1,13 @@
-package com.sample.news.DI
+package com.sample.news.di
 
 import android.arch.lifecycle.ViewModel
 import android.arch.lifecycle.ViewModelProvider
 import dagger.Binds
 import dagger.Module
 import dagger.multibindings.IntoMap
-import com.sample.news.UI.ViewModels.NewsListViewModel
-import com.sample.news.Utils.ViewModelFactory
-import com.sample.news.Utils.ViewModelKey
+import com.sample.news.ui.viewmodels.NewsListViewModel
+import com.sample.news.utils.ViewModelFactory
+import com.sample.news.utils.ViewModelKey
 
 @Module
 abstract class ViewModelModule{

@@ -1,4 +1,4 @@
-package com.sample.news.Utils
+package com.sample.news.utils
 
 import android.arch.lifecycle.ViewModel
 import android.arch.lifecycle.ViewModelProvider
