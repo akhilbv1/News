@@ -34,7 +34,6 @@ class NewsListAdapter(val newsList: List<NewsObject>, val listener: OnNewsItemCl
     inner class ViewHolder(private val newsListBinding: NewsListRowItemBinding) :
         RecyclerView.ViewHolder(newsListBinding.root) {
         fun bind(newsObject: NewsObject) {
-
             //val newsViewModel: NewsListBindingViewModel? = NewsListBindingViewModel()
 
            // newsViewModel?.bind(newsObject)
